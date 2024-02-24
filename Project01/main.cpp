@@ -35,6 +35,8 @@ int main() {
 	int min_range = find_min_abs_num(vector, size);
 	int max_range = find_max_abs_num(vector, size);
 
+	cout << "\nmin: " << min_range << " max: " << max_range << endl;
+
 	cout << "The sum of vector values between min and max is: "
 		<< sum_betweem_min_max(vector, size, min_range, max_range);
 
