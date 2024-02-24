@@ -4,6 +4,10 @@ using namespace std;
 void random_init(int* vector, int size, int min, int max);
 string output(int* array, int size);
 
+int find_min_abs_num(int* vector, int size);
+int find_max_abs_num(int* vector, int size);
+int sum_betweem_min_max(int* vector, int size, int min, int max);
+
 int main() {
 	int size, min, max;
 
@@ -27,6 +31,12 @@ int main() {
 	random_init(vector, size, min, max);
 
 	cout << output(vector, size);
+
+	int min_range = find_min_abs_num(vector, size);
+	int max_range = find_max_abs_num(vector, size);
+
+	cout << "The sum of vector values between min and max is: "
+		<< sum_betweem_min_max(vector, size, min_range, max_range);
 
 	return 0;
 }
